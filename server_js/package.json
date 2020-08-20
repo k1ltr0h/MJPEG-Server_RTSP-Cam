@@ -1,0 +1,28 @@
+{
+  "name": "house-cams",
+  "version": "1.0.0",
+  "description": "guatacas cams",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "bp_event": "^1.2.0",
+    "bp_logger": "^1.1.1",
+    "bp_statemachine": "^1.0.14",
+    "consolidate": "^0.15.1",
+    "dustjs-helpers": "^1.7.4",
+    "dustjs-linkedin": "^2.7.5",
+    "express": "^4.17.1",
+    "ffmpeg": "0.0.4",
+    "i": "^0.3.6",
+    "jsmpeg-player": "^3.0.3",
+    "node-rtsp-stream": "0.0.9",
+    "npm": "^6.14.7",
+    "ws": "^7.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "k1ltr0",
+  "license": "ISC"
+}
