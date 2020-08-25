@@ -14,8 +14,19 @@ int main(){
     test.write(frame);
     frame.release();
     test.start();
-    while(cap.isOpened()){cap >> frame; test.write(frame); frame.release();}
+    while(cap.isOpened()){
+        try{
+            cap >> frame; 
+            test.write(frame); 
+            frame.release();
+            if(waitKey(30) >= 0) break;
+        }
+        catch(int e){
+            break;
+        }
+    }
+    cap.release();
     test.stop();
-    exit(0);
+    return 0;
 
 }
